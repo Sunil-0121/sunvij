@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .container {
+            display: grid;
+            height: 97vh;
+            width: 100%;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 20% 60% 20%;
+        }
+        .header {
+            background-color: aqua;
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+        .navbar {
+            background-color: blueviolet;
+        }
+        .content {
+            background-color: brown;
+        }
+        .aside {
+            background-color: blanchedalmond;
+        }
+        .footer {
+            background-color: black;
+            grid-column: 1/4;
+        }
+        .container >div{
+            font-size: 15px;
+            color: white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media only screen and (max-width: 550px){
+            .container {
+                height: 250vh;
+                grid-template-rows: 10%, 27%, 27%, 26%, 10%;
+            }
+            .header {
+                grid-row: 1/2;
+                grid-column: 1/4;
+            }
+            .navbar {
+                grid-row: 2/3;
+                grid-column: 1/4;
+            }
+            .content {
+                grid-row: 3/4;
+                grid-column: 1/4;
+            }
+            .aside {
+                grid-row: 4/5;
+                grid-column: 1/4;
+            }
+            .footer {
+                grid-row: 5/6;
+                grid-column: 1/4;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">In 2013, Kohli was ranked number one in the ICC rankings for ODI batsmen. In 2018, he was ranked top Test batsman, making him the only Indian cricketer to hold the number one spot in all three formats of the game. He is the first player to score 20,000 runs in a decade. In 2020, the International Cricket Council named him the male cricketer of the decade.[</div>
+        <div class = "navbar">In 2013, Kohli was ranked number one in the ICC rankings for ODI batsmen. In 2018, he was ranked top Test batsman, making him the only Indian cricketer to hold the number one spot in all three formats of the game. He is the first player to score 20,000 runs in a decade. In 2020, the International Cricket Council named him the male cricketer of the decade.[</div>
+        <div class = "content">In 2013, Kohli was ranked number one in the ICC rankings for ODI batsmen. In 2018, he was ranked top Test batsman, making him the only Indian cricketer to hold the number one spot in all three formats of the game. He is the first player to score 20,000 runs in a decade. In 2020, the International Cricket Council named him the male cricketer of the decade.[ He has received many accolades for his performances in cricket. He won the ICC ODI Player of the Year award four times in 2012, 2017, 2018, and 2023. He also won the Sir Garfield Sobers Trophy, given to the ICC Cricketer of the Year, on two occasions, in 2017 and 2018 respectively. In 2018, he became the first player to win both ICC ODI and Test Player of the Year awards in the same year. Also, he was named the Wisden Leading Cricketer in the World for three consecutive years, from 2016 to 2018. At the national level, Kohli was honoured with the Arjuna Award in 2013, the Padma Shri under the sports category in 2017 and India's highest sporting honour, the Khel Ratna award, in 2018.</div>
+        <div class = "aside">In 2013, Kohli was ranked number one in the ICC rankings for ODI batsmen. In 2018, he was ranked top Test batsman, making him the only Indian cricketer to hold the number one spot in all three formats of the game. He is the first player to score 20,000 runs in a decade. In 2020, the International Cricket Council named him the male cricketer of the decade.[</div>
+        <div class = "footer">In 2013, Kohli was ranked number one in the ICC rankings for ODI batsmen. In 2018, he was ranked top Test batsman, making him the only Indian cricketer to hold the number one spot in all three formats of the game. He is the first player to score 20,000 runs in a decade. In 2020, the International Cricket Council named him the male cricketer of the decade.[</div>
+    </div>
+</body>
+</html>

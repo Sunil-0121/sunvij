@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions</title>
+</head>
+<body>
+    <script>
+        // var a = 10;
+        // var b= 20;
+        // if(a<b){
+        //     document.write("two numbers"+a+"and"+b+"is"+b+"grater")
+        // }
+        // var balance = 20000;
+        // var c = prompt("enter amount to transfer");
+        // if(c<balance){
+        //     alert("before deduction")
+        //     balance = balance-c
+        //     alert("after deduction")
+        //     alert("tranasaction sucess")
+        //     document.write(balance)
+
+        // }
+        // else {
+        //     alert("enter valid amount")
+        // }
+        // var grade ;
+        // var score = prompt("enter a marks")
+        // if(score>=90){
+        //     grade = "A"
+        // }
+        // else if(score>=80){
+        //     grade = "B"
+
+        // }
+        // else if(score>=70){
+        //     grade = "C"
+        // }
+        // else if(score>=60){
+        //     grade = "D"
+        // }
+        // else {
+        //     grade = "F"
+        // }
+        // document.write("the score is:" +score+"and the grade is:" +grade)
+        var num1 = +prompt("enter num1");
+        var num2 = +prompt("enter num2");
+        var operation = prompt("which operation can do (+/-/*/ /)")
+        switch(operation){
+            case '+':
+                alert("sum of two numbers is " + (num1+num2))
+                break;
+            case '-':
+                alert("dif of two numbers is" + (num1-num2))
+                break;
+            case '*':
+                alert("multiply of two numbers is" + (num1*num2))
+                break;
+            case '/':
+                alert("divsion of two numbers is " + (num1/num2))
+                break;
+            default:
+                alert("enter valid operation")
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .fs {
+            max-width: 300px;
+            margin-top: 350px;
+        }
+        .fm {
+            padding: 20px;
+        }
+        /* body {
+            background-color: blueviolet;
+        } */
+
+    </style>
+</head>
+<body>
+    <center>
+    <fieldset class = "fs">
+    <form class = "fm">
+        <label>Name</label>
+        <input type = "text" class = "t"><br><br>
+        <button class = "but" onclick="change()" >Submit</button>
+    </form>
+    </fieldset>
+    </center>
+    <script>
+        let butt = document.getElementsByClassName("but")
+        butt.onclick = change ;
+        function change(){
+            document.body.style.backgroundColor='red'
+        }
+    </script>
+</body>
+</html>

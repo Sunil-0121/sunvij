@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: blueviolet;
+        }
+        .clock {
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            border: 10px solid white;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #848484;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        .num {
+            position: absolute;
+            height: 100px;
+        }
+        .num span {
+            width: 16px;
+            height: 32px;
+            line-height: 32px;
+            color: rgb(133, 131, 131);
+            text-align: center;
+            vertical-align: middle;
+        }
+        /* .num1 {
+            transform: rotate(30deg);
+        }
+        .num2 {
+            transform: rotate(60deg);
+        }
+        .num3 {
+            transform: rotate(90deg);
+        } */
+        .num {
+            position: absolute;
+            height: 100px;
+            left: calc(50% - 0.5rem);
+        }
+        .num div {
+            width: 16px;
+            line-height: 32px;
+            color: rgb(133, 131, 131);
+            text-align: center;
+            vertical-align: middle;
+        }
+        .num1 {
+            transform: rotate(30deg);
+        }
+        .num1 span {
+            transform: rotate(-30deg);
+        }
+        .num2 {
+            transform: rotate(60deg);
+        }
+        .num2 span{
+            transform: rotate(-60deg);
+        }
+        .num3 {
+            transform: rotate(90deg);
+        }
+        .num3 span{
+            transform: rotate(-90deg);
+        }
+        .num4 {
+            transform: rotate(120deg);
+        }
+        .num4 span{
+            transform: rotate(-120deg);
+        }
+        .num5 {
+            transform: rotate(150deg);
+        }
+        .num5 span{
+            transform: rotate(-150deg);
+        }
+        .num6 {
+            transform: rotate(180deg);
+        }
+        .num6 span{
+            transform: rotate(-180deg);
+        }
+        .num7 {
+            transform: rotate(210deg);
+        }
+        .num7 span{
+            transform: rotate(-210deg);
+        }
+        .num8 {
+            transform: rotate(240deg);
+        }
+        .num8 span{
+            transform: rotate(-240deg);
+        }
+        .num9 {
+            transform: rotate(270deg);
+        }
+        .num9 span{
+            transform: rotate(-270deg);
+        }
+        .num10 {
+            transform: rotate(300deg);
+        }
+        .num10 span{
+            transform: rotate(-300deg);
+        }
+        .num11 {
+            transform: rotate(330deg);
+        }
+        .num11 span{
+            transform: rotate(-330deg);
+        }
+        .num12 {
+            transform: rotate(360deg);
+        }
+        .num12 span{
+            transform: rotate(-360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class = "clock">
+        <div class = "dot"></div>
+        <div class = "num num1"><span>1</span></div>
+        <div class = "num num2"><span>2</span></div>
+        <div class = "num num3"><span>3</span></div>
+        <div class = "num num4"><span>4</span></div>
+        <div class = "num num5"><span>5</span></div>
+        <div class = "num num6"><span>6</span></div>
+        <div class = "num num7"><span>7</span></div>
+        <div class = "num num8"><span>8</span></div>
+        <div class = "num num9"><span>9</span></div>
+        <div class = "num num10"><span>10</span></div>
+        <div class = "num num11"><span>11</span></div>
+        <div class = "num num12"><span>12</span></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        height: 250vh;
+        grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: 8vh, 20vh, 18vh, 46vh, 12vh, 80vh, 70vh ;
+        grid-template-areas: 
+        "navbar1, navbar1, navbar2, navbar2"
+        "header, header, header, header"
+        "img, img, img, img"
+        "contact1, contact1, epayment, epayment"
+        "heading, heading, heading, heading"
+        "route1, route1, route2, route2"
+        "f1, f2, f3, f4"
+
+    }
+    .navbar {
+        background-color: beige;
+        grid-area: navbar1;
+        grid-area: navbar2;
+    }
+    /* .navbar1 {
+        grid-area: navbar1;
+    }
+    .navbar2 {
+        grid-area: navbar2;
+    } */
+    .header {
+        background-color: bisque;
+        grid-area: header;
+    }
+    .img {
+        background-color: brown;
+        grid-area: img;
+    }
+    .contact {
+        background-color: blueviolet;
+        grid-area: contact1;
+        grid-area: epayment;
+    }
+    .heading {
+        background-color: blue;
+        grid-area: heading;
+    }
+    .routes {
+        background-color: blanchedalmond;
+        grid-area: route1;
+        grid-area: route2;
+    }
+    .footer {
+        background-color: aqua;
+        grid-area: f1;
+        grid-area: f2;
+        grid-area: f3;
+        grid-area: f4;
+    }
+
+</style>
+<body>
+    <div class = "container">
+        <div class = "navbar">
+            <div class = "navbar1">
+            mail
+            </div>
+            <div class = "navbar2">
+            login
+            </div>
+        </div>
+        <div class = "header">
+            header
+        </div>
+        <div class = "img">
+            img
+        </div>
+        <div class = "contact">
+            <div class = "contact1">
+             contact1
+            </div>
+            <div class = "epayment">
+             epayment
+            </div>
+        </div>
+        <div class = "heading">
+          heading
+        </div>
+        <div class = "routes">
+            <div class = "route1">
+             route1
+            </div>
+            <div class = "route2">
+             route2
+            </div>
+        </div>
+        <div class = "footer">
+            <div class = "f1">
+             f1
+            </div>
+            <div class = "f2">
+            f2
+            </div>
+            <div class = "f3">
+            f3
+            </div>
+            <div class = "f4">
+            f4
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

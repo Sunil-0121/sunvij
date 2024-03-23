@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.item1 { grid-area: email;
+         height: 5vh;  }
+.item14 {  grid-area: logo;
+          height: 16vh; }
+.item2 { grid-area: header;
+         height: 16vh; }
+.item3 { grid-area: image;
+         height: 25vh; }
+.item4 { grid-area: getin;
+         height: 45vh; }
+.item5 { grid-area: epayment;
+         height: 45vh; }
+.item6 { grid-area: heading;
+         height: 7vh; }
+.item7 { grid-area: route1;
+         height: 90vh; }
+.item8 { grid-area: route2;
+         height: 90vh; }
+.item9 { grid-area: f1;
+         height: 45vh; }
+.item10 { grid-area: f2;
+          height: 45vh; }
+.item11 { grid-area: f3;
+          height: 45vh; }
+.item12 { grid-area: f4;
+          height: 45vh; }
+.item13 { grid-area: bottom;
+          height: 7vh;}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'email email email email email email email email'
+    'logo logo header header header header header header'
+    'image image image image image image image image'
+    'getin getin getin getin epayment epayment epayment epayment'
+    'heading heading heading heading heading heading heading heading'
+    'route1 route1 route1 route1 route2 route2 route2 route2'
+    'f1 f1 f2 f2 f3 f3 f4 f4'
+    'bottom bottom bottom bottom bottom bottom bottom bottom';
+}
+.img {
+  width: 100%;
+  height: 25vh;
+}
+.branch {
+  font-size: 30px;
+}
+.item6 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.sri {
+  color: red;
+}
+.item13 {
+  text-align: center;
+}
+.item1 {
+  display: flex;
+  justify-content:space-between;
+  background-color: #2691d9;
+}
+.ven {
+  padding-left: 70px;
+}
+.agen {
+  padding-right: 70px;
+}
+.item2 {
+  display: flex;
+  justify-content: right;
+  color: black;
+}
+.home, .book, .serv, .gall, .about, .cont {
+  width: 150px;
+  padding-top: 30px;
+}
+.logo {
+  height: 12%;
+  width: 230px;
+  position: absolute;
+  padding-top: 53px;
+  padding-left: 10px;
+}
+.strong {
+  font-size: 40px;
+}
+.item4 {
+  font-size: 28px;
+}
+.venkat {
+  font-size: 18px;
+  margin-left: 190px;
+}
+.num {
+  font-size: 18px;
+  margin-left: 190px;
+}
+.em12 {
+  font-size: 18px;
+  margin-left: 190px;
+}
+.get {
+  margin-left: 110px;
+}
+.payment {
+  margin-left: 200px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.e {
+  font-size: 30px;
+}
+.num2 {
+  margin-left: 230px;
+}
+.supp {
+  margin-left: 230px;
+}
+.item5 {
+  font-size: 18px;
+}
+.ach, .bang, .che, .gun{
+  margin-left: 300px;
+}
+.ach1, .bang1, .che1, .gun1 {
+  margin-left: 320px;
+}
+.kak, .tpt, .vij, .nel {
+  margin-left: 150px;
+}
+.kak1, .tpt1, .vij1, .nel1 {
+  margin-left: 170px;
+}
+.back {
+  background-color: white;
+  width: 130px;
+  margin-left: 100px;
+}
+.f11, .f12, .f13 {
+  margin-left: 100px;
+  font-size: 18px;
+  color: white;
+}
+.back1 {
+  background-color: white;
+  width: 170px;
+  margin-left: 50px;
+}
+.f21, .f22, .f23, .f24, .f25, .f26 {
+  margin-left: 70px;
+  font-size: 18px;
+}
+.back2 {
+  background-color: white;
+  width: 170px;
+  margin-left: 50px;
+}
+.f31, .f32, .f33, .f34, .f35, .f36 {
+  margin-left: 70px;
+  font-size: 18px;
+  color: white;
+}
+.back3 {
+  background-color: white;
+  width: 150px;
+  margin-left: 3px;
+  font-size: 24px;
+}
+.item12 {
+  font-size: 25px;
+}
+.item9, .item10, .item11, .item12 {
+  background-color: #2691d9;
+}
+.item13 {
+  background-color: #2691d9;
+}
+.f21, a {
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">
+    <p class = "ven"><font color = "white"><i class="fa-solid fa-envelope"></i> venkateswara12@gmail.com</font></p>
+    <p class = "agen"><font color = "white">Agent Login</font></p>
+  </div>
+  <img src = "logging.jpeg" class = "logo">
+  <div class="item2">
+    <h3 class = "home">Home</h3>
+    <h3 class = "book">Bookings</h3>
+    <h3 class = "serv">Service</h3>
+    <h3 class = "gall">Gallery</h3>
+    <h3 class = "about">About</h3>
+    <h3 class = "cont">ContactUs</h3>
+  </div>
+  <div class="item3">
+    <img src = "balaji.jpg" class = "img">
+  </div>  
+  <div class="item4">
+    <p class = "get">Get in<strong class = "strong">Touch with us</strong></p>
+    <p class = "venkat"> <i class="fa-solid fa-location-dot"></i>  sri venkateswara Travels<br>
+      Plot No 49-55, Mitra Hills,<br>
+      High Tension Lane Road, Nizampet, Hyderabad,<br>
+      Telangana -500090<br></p>
+    <p class = "num"><i class="fa-solid fa-phone"></i> 9246334422, 9143577433<br></p>
+    <p class = "em12"><i class="fa-solid fa-envelope"></i> venkateswara12@gmail.com</p>
+  </div>
+  <div class="item5">
+    <p class = "payment"><strong class = "e">E-</strong>Payment related issues</p><br>
+    <p class = "num2"><i class="fa-solid fa-phone"></i> 080-46333634</p><br>
+    <p class = "supp"> <i class="fa-solid fa-envelope"></i> support@mybusbookings.com</p>
+  </div>
+  <div class="item6">
+    <p><h2>Other <b class = "branch">Branches</b></h2></p>
+  </div>
+  <div class="item7">
+    <h3 class = "ach"><font color = "blue">Achanta</font></h3>
+    <p class = "ach1">sri venkateswara Travels, Near Center,<br>
+      Achanta, Andhra Pradesh<br>
+      Pin: 000000<br>
+      9440255555, 9848425934</p>
+    <h3 class = "bang"><font color = "blue">Bangalore</font></h3>
+    <p class = "bang1">sri venkateswara Travels, No 23,1st Floor,<br>
+      Opp Kalamandir Near SBH Bank,Vodafone Store,<br>
+      Outer Ring road, Service Road Anand Nagar,<br>
+      Marthahalli Bangalore, Karnataka,<br>
+      Pin: 000000<br>
+      7095582777, 9035600200</p>
+      <h3 class = "che"><font color = "blue">Chennai</font></h3>
+      <p class = "che1">sri venkateswara Travels,<br>
+        Chennai, Tamil Nadu<br>
+        Pin: 000000<br>
+        8870558777</p>
+        <h3 class = "gun"><font color = "blue">Guntur</font></h3>
+        <p class = "gun1">sri venkateswara Travels,<br>
+          Opp RTC Bus Stand,<br>
+          Global Complex Guntur,<br>
+          Andhra Pradesh<br>
+          Pin: 000000<br>
+          7207782777</p>
+  </div>
+  <div class="item8">
+    <h3 class = "kak"><font color = "blue">Kakinada</font></h3>
+    <p class = "kak1">Kakinada, Andhra Pradesh<br>
+      Pin: 000000<br>
+      9963234333</p>
+      <h3 class = "tpt"><font color = "blue">Tirupathi</font></h3>
+      <p class = "tpt1">sri venkateswara Travels, Opp RTC bus stand,<br>
+        Tirupati, Andhra Pradesh<br>
+        Pin: 000000<br>
+        9640671777, 9397999924</p>
+        <h3 class = "vij"><font color = "blue">Vijayawada</font></h3>
+        <p class = "vij1">VIJVijayawada, Andhra Pradesh<br>
+          Pin: 000000<br>
+          ph:8977582777</p>
+          <h3 class = "nel"><font color = "blue">Nellore</font></h3> 
+          <p class = "nel1">sri venkateswara Travels<br>
+            Nellore, Andhra Pradesh<br>
+            Pin: 000000<br>
+            9346733733</p> 
+  </div>
+  <div class="item9">
+    <h2 class = "back">CONTACT</h2>
+    <P class = "f11"> <i class="fa-solid fa-location-dot"></i> : <b>SRI VENKATESWARA
+      TRAVELS</b></P>
+    <p class = "f12">2-88, KORLAGUDEM, KALLURU,<br>
+      KHAMMAM, Khammam,<br>
+      Telangana-507209</p>
+    <p class = "f13"><i class="fa-solid fa-phone"></i> : 8179574959<br>
+      <i class="fa-solid fa-envelope"></i> : srivenkateswaratravels.spl@gmail.com
+    </p>
+  </div>
+  <div class="item10">
+    <h2 class = "back1">QUICK LINKS</h2>
+    <span class = "f21"><a href = ""><font color = "white">Shedules</font></a></span>
+    <p class = "f22"><a href = ""><font color = "white">Refund Status</font></a></p>
+    <p class = "f23"><a href = ""><font color = "white">Agent Registration</font></a></p>
+    <p class = "f24"><a href = ""><font color = "white">Privacy Policy</font></a></p>
+    <p class = "f25"><a href = ""><font color = "white">FAQS</font></a></p>
+    <p class = "f26"><a href = ""><font color = "white">Feedback</font></a></p>
+  </p>
+  </div>
+  <div class="item11">
+    <h2 class = "back2">QUICK LINKS</h2>
+    <p class = "f31"><a href = ""><font color = "white">Terms & Conditions</font></a></p>
+    <p class = "f32"><a href = ""><font color = "white">Confirm Phone Booking</font></a></p>
+    <p class = "f33"><a href = ""><font color = "white">Contact</font></a></p>
+    <p class = "f34"><a href = ""><font color = "white">Gallery</font></a></p>
+    <p class = "f35"><a href = ""><font color = "white">About Us</font></a></p>
+    <p class = "f36"><a href = ""><font color = "white">Agent Login</font></a></p>
+  </div>
+  <div class="item12">
+    <h2 class = "back3">FOLLOW US</h2>
+    <font color = "white"><i class="fa-brands fa-facebook"></i></font>&nbsp;&nbsp;&nbsp;
+    <font color = "white"><i class="fa-brands fa-twitter"></i></font>&nbsp;&nbsp;&nbsp;
+    <font color = "white"><i class="fa-brands fa-youtube"></i></font>&nbsp;&nbsp;&nbsp;
+    <font color = "white"><i class="fa-brands fa-linkedin"></i></font>&nbsp;&nbsp;&nbsp;
+    <font color = "white"><i class="fa-brands fa-instagram"></i></font>&nbsp;&nbsp;&nbsp;
+  </div>
+  <div class="item13">
+    <h3>2023 All rights reserved.<b class = "sri">SRI VENKATESWARA TRAVELS</b></h3>
+  </div>
+</body>
+</html>

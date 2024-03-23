@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION BAR</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar {
+            width: 100%;
+            height: 50px;
+        }
+        .navbar ul {
+            list-style-type: none;
+        }
+    
+        .navbar ul li {
+            float: right;
+            width: 150px;
+            font-size: 15px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+        }
+        .navbar ul li a:hover {
+            background-color: rgb(132, 239, 203);
+            display: block;
+        }
+        .image {
+            position: fixed;
+            width: 150px;
+            height: 50px;
+        }
+        body {
+            background-image: url("C:\\Users\\Dell\\OneDrive\\Desktop\\webApp2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <img src ="C:\Users\Dell\OneDrive\Desktop\capture-120x120.png" class = "image" >
+    <nav class = "navbar">
+        <ul>
+            <li><a href ="login.html" target = "iframe1"><font color = red> LOGIN</font></a></li>
+            <li><a href ="register.html" target ="iframe1"><font color = red>REGISTER</font></a></li>
+            <li><a href ="about.html" target = "iframe1"><font color = red>ABOUT</font></a></li>
+            <li><a href ="home.html" target = "iframe1"><font color = red>HOME</font></a></li>
+        </ul>
+
+    </nav>
+    <iframe src ="" name = "iframe1" height ="665px" width ="100%"></iframe>
+    <iframe src ="" name = "iframe1" height ="665px" width ="100%"></iframe>
+    <iframe src ="" name = "iframe1" height ="665px" width ="100%"></iframe>
+    <iframe src ="" name = "iframe1" height ="665px" width ="100%"></iframe>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Using JavaScript</title>
+</head>
+<style>
+    .fs {
+        max-width: 320px;
+        text-align: center;
+        margin-top: 250px;
+        padding-top: 1px;
+        border-radius: 6%;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+    }
+    body {
+        background: linear-gradient(to right, rgb(229, 148, 229), rgb(232, 153, 166), rgb(140, 213, 237));
+    }
+    .but {
+        background-color: #2691d9;
+        padding: 3px;
+        color: white;
+    }
+    #username {
+        width: 220px;
+        height: 20px;
+        font-size: 14px;
+    }
+    #password {
+        width: 220px;
+        height: 20px;
+        font-size: 14px;
+    }
+    .un, .pw {
+        font-size: 18px;
+    }
+    h1 {
+        background: linear-gradient(to right, rgb(229, 148, 229), rgb(232, 153, 166), rgb(140, 213, 237));
+        color: transparent;
+       background-clip: text;
+       padding-bottom: 5px;
+    }
+</style>
+
+<body>
+    <center>
+    <fieldset class = "fs">
+    <form id = "form">
+        <h1>LogIn Form</h1>
+        <label class = "un">UserName</label>&nbsp;
+        <input type = "text" id = "username" placeholder="UserName"><br><br>
+        <label class = "pw">Password</label>&nbsp;
+        <input type = "password" id = "password" placeholder="Password"><br><br>
+        <p id="error-message"></p>
+        <input type = "submit"  class = "but" value="SUBMIT">
+    </form>
+    </fieldset>
+    </center>
+    <script>
+        var form = document.getElementById('form').addEventListener('submit', function(event){
+            event.preventDefault();
+            console.log('LogIn Form submitted sucessfully !!');
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            try{
+                if(username===""|| password===""){
+                    throw "Username and Password are required";
+                }
+                else{
+                    console.log("Username:"+username);
+                    console.log("Password"+password);
+                }
+            }
+            catch(error){
+                    document.getElementById('error-message').innerHTML=error;
+                }
+        });
+    </script>
+</body>
+</html>

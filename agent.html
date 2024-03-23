@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Login</title>
+    <script src="https://kit.fontawesome.com/e4c21a2b34.js" crossorigin="anonymous"></script>
+    <style>
+        .h1{
+            position:absolute;
+            top:30%;
+            left:45%;
+            font:25px Lato,sans-serif;
+            color:#ffff;
+        }
+        .form{
+            position:absolute;
+            top:40%;
+            left:38%;
+        }
+        label{
+            font:15px Lato,sans-serif;
+            position: absolute;
+            left:35%;
+            color:#ffff;
+        }
+        input{
+            height:25px;
+            width:250px;
+            border: #9FD542 solid;
+            outline: none;
+            border-radius: 8px;
+            background-color: aqua;
+        }
+        .sign{
+            text-decoration: none;
+            border: 5px #9FD542 solid;
+            padding:5px 102px;
+            background-color: #9FD542;
+            color:#ffff;
+            font:15px Lato,sans-serif;
+            border-radius: 8px;
+        }
+        .password{
+            position:absolute;
+            right:1px;
+            text-decoration: none;
+            color:#ffff
+        }
+        i{
+            position:absolute;
+            right:102px;
+            color:#ffff;
+        }
+        body{
+            background: transparent;
+            background-image: url(bustravel4.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">Sign In</h1>
+    <form class="form">
+        <label>Username</label><br>
+        <input    type="text" placeholder="Username"/><br><br>
+        <label>Password</label><br>
+        <input  type="password"  placeholder="Password" /><br><br>
+        <a class="sign" href="#">Sign In</a><br><br>
+        <i class="fa-solid fa-key"></i><a  class="password" href="#">Reset Password</a>
+    </form>
+    
+</body>
+</html>

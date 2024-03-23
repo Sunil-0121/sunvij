@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.clock{
+    width:480px;
+    height:480px;
+    position:relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("god1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.number{
+    transform: rotate(calc(30deg * var(--num)));
+    position: absolute;
+    text-align: center;
+    inset:20px;
+    font-size: 40px;
+    color: white;
+}
+.number b{
+    transform: rotate(calc(-30deg * var(--num)));
+    display: inline-block;
+}
+.dot{
+    position:absolute;
+    width:25px;
+    height:25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.hrhand{
+    width:5px;
+    height:27%;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform-origin: 50% 80%;
+    border-radius: 100% 100% 0 0;
+    background-color: #000;
+}
+.minhand{
+    width:3px;
+    height:40%;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform-origin: 50% 80%;
+    border-radius: 100% 100% 0 0;
+    background-color: #000;
+}
+.sechand{
+    width:6px;
+    height:50%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform-origin: 50% 80%;
+    border-radius: 100% 100% 0 0;
+    background-color: #000;
+}
+.dot{
+    background: linear-gradient(to top, #000000,#020202);
+    z-index:1;
+    left: calc(50% - 10px);
+}
+
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="number" style="--num:1"><b>1</b></div>
+        <div class="number" style="--num:2"><b>2</b></div>
+        <div class="number" style="--num:3"><b>3</b></div>
+        <div class="number" style="--num:4"><b>4</b></div>
+        <div class="number" style="--num:5"><b>5</b></div>
+        <div class="number" style="--num:6"><b>6</b></div>
+        <div class="number" style="--num:7"><b>7</b></div>
+        <div class="number" style="--num:8"><b>8</b></div>
+        <div class="number" style="--num:9"><b>9</b></div>
+        <div class="number" style="--num:10"><b>10</b></div>
+        <div class="number" style="--num:11"><b>11</b></div>
+        <div class="number" style="--num:12"><b>12</b></div>
+        <div class="hrhand" id="hrhand"></div>
+        <div class="minhand" id="minhand"></div>
+        <div class="sechand" id="sechand"></div>
+        <div class="dot"></div>
+    </div>
+    <script>
+        var hrhand = document.querySelector(".hrhand");
+        var minhand = document.querySelector(".minhand");
+        var sechand = document.querySelector(".sechand");
+        setInterval(updateTime, 1000);
+        function updateTime(){
+            var date = new Date();
+            sechand.style.transform= `rotate(${date.getSeconds() * 6}deg)`
+            minhand.style.transform= `rotate(${date.getMinutes() * 6}deg)`
+            hrhand.style.transform= `rotate(${date.getHours() * 30 + date.getMinutes() * 0.5}deg)`
+        }
+
+    </script>
+</body>
+</html>
