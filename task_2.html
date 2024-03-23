@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRICAL TECHNOLOGIES</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+        }
+        .navbar
+        {
+            width: 100%;
+            height: 50px;
+            margin: 0px;
+            background: lightblue;
+        }
+        .navbar ul
+        {
+            list-style-type: none;
+        }
+        .navbar ul li {
+            float: right;
+            width: 150px;
+            font-size: 10px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: rgb(12, 1, 1);
+            display: block;
+        }
+        .navbar ul li a:hover { 
+            background-color: rgb(20, 156, 88);
+        }
+        .navbar ul ul{
+            position: absolute;
+            background-color: rgb(252, 251, 252);
+            display: none;
+        }
+        .navbar ul ul ul{
+            right: 100%;
+            top: 0px;
+        }
+        .navbar ul li:hover > ul
+        {
+            display: block;
+        }
+        .navbar ul ul ul ul{
+            right: 100%;
+            top: 0px;
+        }
+        .navbar ul ul ul ul ul{
+            right: 100%;
+            top: 0px;
+        }
+        .image {
+            position: fixed;
+            height: 50px;
+            width: 170px;
+            left: 0px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <img src = "C:\Users\Dell\OneDrive\Desktop\capture-120x120.png" class = "image">
+    <nav class = "navbar">
+    <ul>
+        <li><a href = "table.html" >CONTACT</a></li>
+        <li><a href = "#">SERVICES</a>
+                <ul>
+                    <li><a href = "#">IT SERVICES</a>
+                        <ul>
+                            <li><a href="#">WEB APPLICATIONS</a></li>
+                            <li><a href="#">MOBILE APPLICATIONS</a></li>
+                            <li><a href="#">DATA ANALYTICS</a></li>
+                            <li><a href="#">AI & ML SERVICES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "#">ENGINEERING SERVICES</a>
+                        <ul>
+                            <li><a href="#">TOOL DESIGN</a></li>
+                            <li><a href="#">MECHANICAL DESIGN</a></li>
+                            <li><a href="#">PRODUCT ENGINEERING</a></li>
+                            <li><a href="#">REVERSE ENGINEERING</a></li>
+                        </ul>
+                    </li>  
+                    <li><a href = "#">OTHER SERVICES</a>
+                        <ul>
+                            <li><a href="#">DIGITAL MARKETING</a></li>
+                            <li><a href="#">CONSTRUCTION SERVICES</a></li>
+                            <li><a href="#">INTERIOR DESIGN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </li>
+        <li><a href = "#">CAREERS</a>
+            <ul>
+                <li><a href = "#">INTERNSHIP</a></li>
+            </ul>
+        </li>
+        <li><a href = "#">ABOUT</a> </li>
+        <li><a href = "#">HOME</a></li>
+    </ul>
+    </nav>
+</body>
+</html>
